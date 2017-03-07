@@ -1,6 +1,6 @@
 # rest-sandbox
 
-A sandbox Spring Boot / REST project
+A sandbox Spring Boot / REST project. I am making a small modification to it, to see if this is picked up by the atomist webhook.
 
 
 This Spring Boot microservice is driven using Maven. To run locally
