@@ -5,15 +5,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
-@FeignClient(name = "http://external.service.org", fallback = FeignedExternalServiceFallback.class)
+@FeignClient(name = "http://another.external.endpoint.com", fallback = FeignedExternalServiceFallback.class)
 interface FeignedExternalService {
-    @RequestMapping(value = "/myendpoint", method = GET)
-    String doTheThing();
+    @RequestMapping(value = "/myOtherEndpoint", method = GET)
+    String doTheOtherThing();
 }
 
 class FeignedExternalServiceFallback implements FeignedExternalService {
     @Override
-    public String doTheThing() {
+    public String doTheOtherThing() {
         return null;
     }
 }

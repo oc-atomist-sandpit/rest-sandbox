@@ -98,3 +98,21 @@ editor:
     - "invoking_relative_endpoint_url": "/myendpoint"
     - "endpoint_invoking_method": "doTheThing"
 
+---
+kind: "operation"
+client: "atomist"
+editor:
+  name: "atomist-rugs.spring-cloud-editors.AddFeignClientWithCircuitBreaker"
+  group: "atomist-rugs"
+  artifact: "spring-cloud-editors"
+  version: "0.2.0"
+  origin:
+    repo: "atomist-rugs/spring-cloud-editors.git"
+    branch: "b263095528641f17324548f57898c24dd0171b50"
+    sha: "b263095"
+  parameters:
+    - "consumed_endpoint_address": "http://another.external.endpoint.com"
+    - "feign_interface": "FeignedExternalService"
+    - "invoking_relative_endpoint_url": "/myOtherEndpoint"
+    - "endpoint_invoking_method": "doTheOtherThing"
+
